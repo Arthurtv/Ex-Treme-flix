@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-Treme-Flix</title>
+    <style>      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            }
+        main {
+            padding: 2em;
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            background-color: #333;
+            color: #ffffff            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .toolbar {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .toolbar button {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            margin-right: 20px;
+        }
+        .toolbar h1 {
+            margin: 0;
+        }
+        .drawer {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .drawer a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .drawer a:hover {
+            color: #f1f1f1;
+        }
+        .drawer .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="toolbar">
+        <button onclick="openDrawer()">&#9776;</button>
+       
+    </div>
+
+    <div id="myDrawer" class="drawer">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDrawer()">&times;</a>
+        <a href="https://api.whatsapp.com/send?phone=993788794&text=Olá!%20Gostaria%20de%20tira%20uma%20duvida.">Whatsapp</a>
+        <a href="mailto: arturfake965@gmail.com">Ajudar e suporte</a>
+    </div>
+    
+    <div id="main">
+    </div>   
+    <script>
+        function openDrawer() {
+            document.getElementById("myDrawer").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeDrawer() {
+            document.getElementById("myDrawer").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script
+    <main>
+       <head>
+    <meta charSet="utf-8" />
+    <meta name="next-size-adjust" />
+    <meta name="google-site-verification" content="lW0XnoufdipOkHk-jkkXM4NUjU_0ENGGu6lIv2mHv6U" />
+    <title>Ex-Treme fx</title>
+    <meta name="description" content="Ex-Treme flix e um aplicativo pra você assistir seu filme ou série favorita, no conforto da sua casa." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/storage-1d5f7.appspot.com/o/Logo%2F1705405945542?alt=media&amp;token=3f2e3b4f-189d-4368-8ee1-f8a4a9f8ffa0" />
+    <meta property="og:image:alt" content="Aurora Play" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:type" content="image/PNG" />
+
+    <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" noModule=""></script>
+    <style>
+        /* Reseta algumas propriedades padrões para garantir consistência entre navegadores */
+        body, h1, h3, p, button {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+
+        header img.icon-modal {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .background {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section1, .section2, .section3, .section4, .section5, .section10 {
+            margin-bottom: 20px;
+        }
+
+        .section1, .section2, .section3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .section1 img.icon, .section5 img.screenshot {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .section1 .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .section1 .developer {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .section2, .section3 {
+            justify-content: space-between;
+        }
+
+        .section2 .category, .section2 .layout_rating {
+            text-align: center;
+        }
+
+        .section2 h3, .section2 p {
+            margin: 5px 0;
+        }
+
+        .section3 .section_button {
+            display: flex;
+        }
+
+        .section_button button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+       
+
+        .section4 h3, .section5 h3, .section10 h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+
+        
+        
+
+        
+        
+        .section10 p.whats {
+            white-space: pre-line;
+        }
+
+        @media (max-width: 600px) {
+            .section1, .section2, .section3 {
+                flex-direction: column;
+                align-items: flex-start;
+
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+ a {
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    transition: all 0.25s ease-in-out;
+}
+
+a:hover{
+    background-color: #000000;
+}
+    </style>
+</head>
+
+<body class="__className_d9825c">
+    <header>
+        
+    </header>
+    <main>
+        <div class="background">
+            <section class="section1">
+                <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/storage-1d5f7.appspot.com/o/Logo%2F1705405945542?alt=media&amp;token=3f2e3b4f-189d-4368-8ee1-f8a4a9f8ffa0" alt="" />
+                <div>
+                    <p class="title">Ex-Treme flix</p>
+                    <p class="developer">Artcyber</p>
+                    <p class="developer">12,8 MB</p>
+                </div>
+            </section>
+            <section class="section2">
+                <div>
+                    <div class="layout_rating">
+
+                    </div>
+                </div>
+                <div class="layout_rating">
+                    <h3>Tamanho</h3>
+                    <p>12,85 MB</p>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="section_button">
+ <a href="Ex-Treme flix_1.6.apk" download>Instalar</a>
+                </div>
+            </section>
+            <section class="section4">
+                <h3>Descrição</h3>
+                <p>Ex-Treme flix e um aplicativo pra você assistir seu filme ou série favorita, no conforto da sua casa.</p>
+            </section>
+
+            <section class="section10">
+                <h3>O que há de novo</h3>
+                <p class="whats">
+                <br><br></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        
+        <p>&copy; Ex-Treme Flix</p>
+   </foote
